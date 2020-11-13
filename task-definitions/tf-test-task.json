@@ -1,0 +1,26 @@
+[
+  {
+    "name": "tf-test-task",
+    "image": "855345515461.dkr.ecr.eu-central-1.amazonaws.com/test-service:latest",
+    "memoryReservation": 512,
+    "links": [],
+    "portMappings": [
+      {
+        "containerPort": 80,
+        "hostPort": 80,
+        "protocol": "tcp"
+      }
+    ],
+    "essential": true,
+    "entryPoint": [],
+    "command": [],
+    "environment": [
+      {
+        "name": "PORT",
+        "value": "80"
+      }
+    ],
+    "mountPoints": [],
+    "volumesFrom": []
+  }
+]
