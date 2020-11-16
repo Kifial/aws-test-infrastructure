@@ -11,20 +11,6 @@ variable region {
   default     = "eu-central-1"
 }
 
-# TODO: support multiple availability zones, and default to it.
-variable availability_zone {
-  description = "The availability zone"
-  default = {
-    "main"      = "eu-central-1a"
-    "secondary" = "eu-central-1b"
-  }
-}
-
-variable ecs_cluster_name {
-  description = "The name of the Amazon ECS cluster."
-  default     = "tf-test"
-}
-
 variable ssh_pubkey_file {
   description = "Path to an SSH public key"
   default     = "~/.ssh/id_rsa.pub"
